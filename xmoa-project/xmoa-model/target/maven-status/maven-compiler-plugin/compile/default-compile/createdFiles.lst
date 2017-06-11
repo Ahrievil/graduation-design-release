@@ -1,0 +1,13 @@
+com\ty\xmoa\model\OaModule.class
+com\ty\xmoa\model\OaSalaries.class
+com\ty\xmoa\model\OaPost.class
+com\ty\xmoa\model\OaProject.class
+com\ty\xmoa\model\OaMessage.class
+com\ty\xmoa\model\OaRole.class
+com\ty\xmoa\model\OaFile.class
+com\ty\xmoa\model\OaRequire.class
+com\ty\xmoa\model\OaPlan.class
+com\ty\xmoa\model\OaCustomer.class
+com\ty\xmoa\model\OaFeature.class
+com\ty\xmoa\model\OaFunctions.class
+com\ty\xmoa\model\OaUser.class

@@ -1,0 +1,13 @@
+com\ty\xmoa\service\FileService.class
+com\ty\xmoa\service\FunService.class
+com\ty\xmoa\service\ModService.class
+com\ty\xmoa\service\RoleService.class
+com\ty\xmoa\service\CustomerService.class
+com\ty\xmoa\service\PlanService.class
+com\ty\xmoa\service\FeaService.class
+com\ty\xmoa\service\PostService.class
+com\ty\xmoa\service\ProService.class
+com\ty\xmoa\service\MessageService.class
+com\ty\xmoa\service\PerwService.class
+com\ty\xmoa\service\ReqService.class
+com\ty\xmoa\service\UserService.class

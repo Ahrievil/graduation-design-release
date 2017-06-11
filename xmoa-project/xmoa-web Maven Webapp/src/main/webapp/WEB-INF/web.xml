@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>xmoa</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <display-name>EncodingFilter</display-name>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>com.ty.xmoa.api.filter.EncodingFilter</filter-class>
+  </filter>
+
+  <!-- 请求映射器 -->
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>com.ty.xmoa.util.BaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>checkcode</servlet-name>
+    <servlet-class>com.ty.xmoa.api.controller.CheckCodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadServlet</servlet-name>
+    <servlet-class>com.ty.xmoa.api.controller.UploadServlet</servlet-class>
+  </servlet>
+  <filter>
+    <filter-name>loginFilter</filter-name>
+    <filter-class>com.ty.xmoa.api.filter.LoginFilter</filter-class>
+  </filter>
+  
+  
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>loginFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>checkcode</servlet-name>
+    <url-pattern>/img</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadServlet</servlet-name>
+    <url-pattern>/uploadServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
